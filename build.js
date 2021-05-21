@@ -65,7 +65,7 @@ function obfuscate(filePath) {
       deadCodeInjectionThreshold: 1,
       debugProtection: false,
       debugProtectionInterval: false,
-      disableConsoleOutput: true,
+      disableConsoleOutput: false,
       identifierNamesGenerator: 'hexadecimal',
       log: false,
       numbersToExpressions: true,
