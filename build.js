@@ -61,6 +61,8 @@ function obfuscate(filePath) {
       compact: true, // Set true to enable minification
       controlFlowFlattening: true,
       target: "browser",
+      stringArray: true,
+      stringArrayEncoding: ["rc4"],
     }); // Generated minified and obfuscated code
     Fs.writeFileSync(filePath, result.getObfuscatedCode());
   } catch (error) {
